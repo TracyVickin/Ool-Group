@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+import { FaWhatsapp, FaRegClock } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const images = [
   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
@@ -8,6 +11,7 @@ const images = [
 
 export default function Hero() {
   const [bgIndex, setBgIndex] = useState(0);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,31 +31,36 @@ export default function Hero() {
       }}
     >
       {/* Top Bar */}
-      <div className="w-full flex flex-col md:flex-row justify-between items-center px-4 md:px-8 py-2 text-[10px] sm:text-xs text-[#d2bfa3] bg-black/60 font-heebo gap-1 md:gap-0">
-        <div className="flex flex-col sm:flex-row gap-1 sm:gap-6 text-center md:text-left">
-          <span>📍 Jl. Raya Ubud No.88, Bali 80571</span>
-          <span>📞 (+62) 81 2345 1234</span>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-1 sm:gap-6 text-center md:text-right">
-          <span>🕒 Opening : Mon-Fri 08:00 – 17:00</span>
+      <div className="w-full flex justify-end items-center px-4 sm:px-8 md:px-16 py-2 text-[10px] sm:text-xs text-[#d2bfa3] bg-black/60 font-heebo border-b border-gray-500">
+        <div className="flex items-center gap-2">
+          <FaRegClock />
+          <span>Opening : Mon-Fri 08:00 – 06:00</span>
         </div>
       </div>
       {/* Navbar */}
-      <nav className="flex flex-col md:flex-row justify-between items-center px-4 sm:px-8 md:px-16 py-4 md:py-6 gap-3 md:gap-0  bg-black/60">
+      <nav className="flex  md:flex-row justify-between items-center px-4 sm:px-8 md:px-16 py-4 md:py-6 gap-3 md:gap-0 bg-black/60 relative">
         <div className="text-white text-2xl sm:text-3xl font-bold tracking-widest font-lato">OOLGROUP</div>
-        <ul className="flex flex-wrap justify-center gap-4 sm:gap-8 md:gap-10 text-white font-heebo text-xs sm:text-sm tracking-wide">
-          <li><a href="#" className="text-white hover:text-[#d2bfa3]">HOME</a></li>
-          <li><a href="#" className="text-white hover:text-[#d2bfa3]">ABOUT US</a></li>
-          <li><a href="#" className="text-white hover:text-[#d2bfa3]">SERVICES</a></li>
-          <li><a href="#" className="text-white hover:text-[#d2bfa3]">PROJECTS</a></li>
-          <li><a href="#" className="text-white hover:text-[#d2bfa3]">CONTACT</a></li>
+        <div className="md:hidden">
+          <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white bg-transparent border-none outline-none focus:outline-none focus:ring-0">
+            {isMenuOpen ? <FaTimes size={30} className="text-white" /> : <FaBars size={30} className="text-white" />}
+          </button>
+        </div>
+        <ul className={`md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-black/80 md:bg-transparent items-center gap-4 sm:gap-8 md:gap-10 text-white font-heebo text-xs sm:text-sm tracking-wide transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'}`}>
+          <li className="py-2 md:py-0"><Link to="/" className="text-white hover:text-[#d2bfa3]">HOME</Link></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">ABOUT US</a></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">SERVICES</a></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">PROJECTS</a></li>
+          <li className="py-2 md:py-0"><Link to="/contact" className="text-white hover:text-[#d2bfa3]">CONTACT</Link></li>
         </ul>
       </nav>
       {/* Hero Content */}
       <div className="flex-1 flex flex-col justify-center items-center text-center bg-black/60 px-2 sm:px-8">
-        <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-lato font-bold text-[#d2bfa3] mb-2 tracking-wide leading-tight">OOL GROUP</h2>
+        <h2 className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-lato font-bold text-[#d2bfa3] mb-2 tracking-wide leading-tight">OLA OF LAGOS GROUP</h2>
         <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-lato font-bold text-white mb-8 tracking-wide leading-tight">OF COMPANIES</h3>
-        <button className="px-6 sm:px-10 py-2 sm:py-3 border border-white text-xs sm:text-base text-white font-heebo tracking-widest bg-transparent hover:bg-white hover:text-black transition-all duration-300">VIEW PORTFOLIO</button>
+        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="px-6 sm:px-10 py-2 sm:py-3 border border-white text-xs sm:text-base text-white font-heebo tracking-widest bg-transparent hover:bg-white hover:text-black transition-all duration-300 flex items-center gap-2">
+          <FaWhatsapp size={20} />
+          GET STARTED
+        </a>
       </div>
     </div>
   );
