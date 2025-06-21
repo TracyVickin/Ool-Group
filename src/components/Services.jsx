@@ -5,7 +5,7 @@ import collage from '../assets/photo-collage.png';
 
 export default function Services() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto" id="services">
       {/* Top Section with Background */}
       <div
         className="relative py-24 md:py-48 px-4 text-center text-white bg-black"
@@ -19,7 +19,7 @@ export default function Services() {
         <div className="absolute inset-0 bg-black/75" />
         <div className="relative z-10 pb-8 md:pb-12">
           <p className="font-semibold text-sm text-[#d2bfa3] tracking-widest">SERVICES</p>
-          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-10">WHAT WE OFFER</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-10 font-lato text-white">WHAT WE OFFER</h2>
           <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300">
           Unlock exceptional services in car sales, car rentals, and real estate, delivering tailored options for your vehicle and property needs with unmatched quality.
           </p>
@@ -73,7 +73,7 @@ export default function Services() {
         <div className="container mx-auto px-4 text-center -mt-8 md:-mt-16 lg:-mt-24">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
-              <p className="text-2xl md:text-3xl font-bold text-black font-lato">6 +</p>
+              <p className="text-3xl md:text-4xl font-bold text-black font-lato">6 +</p>
               <p className="text-gray-500 text-sm">Years of Experience</p>
             </div>
             <div>

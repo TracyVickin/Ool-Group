@@ -21,9 +21,9 @@ const logos = [
 
 const Partners = () => {
   return (
-    <div className="bg-gray-100 py-12">
+    <div className="bg-gray-200 py-12">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Our Partners</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-black font-lato">Our Partners</h2>
         <Marquee gradient={false} speed={50} pauseOnHover={true}>
           {[...logos, ...logos].map((logo, index) => (
             <div key={index} className="mx-8">
