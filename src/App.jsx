@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import AboutSection from "./components/AboutSection";
+import Portfolio from "./components/Portfolio";
 import Faq from "./components/Faq";
 import Partners from "./components/Partners";
 import ReachOut from './components/ReachOut';
@@ -17,6 +18,7 @@ const Home = () => (
     <Hero />
     <AboutSection />
     <Services />
+    <Portfolio />
     <Partners />
     <Faq />
     <ReachOut />

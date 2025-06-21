@@ -5,7 +5,7 @@ import collage from '../assets/photo-collage.png';
 
 export default function Services() {
   return (
-    <div className="w-full h-auto">
+    <div className="w-full h-auto" id="services">
       {/* Top Section with Background */}
       <div
         className="relative py-8 sm:py-12 md:py-16 lg:py-24 px-4 text-center text-white bg-black"
@@ -16,12 +16,12 @@ export default function Services() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-black/70" />
-        <div className="relative z-10 py-4 sm:py-6 md:py-8">
-          <p className="font-semibold text-xs sm:text-sm md:text-base text-[#ad9271] tracking-widest">SERVICES</p>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-bold mt-2 mb-4 sm:mb-6 md:mb-10">WHAT WE OFFER</h2>
-          <p className="max-w-xs sm:max-w-sm md:max-w-lg lg:max-w-2xl mx-auto text-xs sm:text-sm md:text-base text-gray-300">
-            Unlock exceptional services in car sales, car rentals, and real estate, delivering tailored options for your vehicle and property needs with unmatched quality.
+        <div className="absolute inset-0 bg-black/75" />
+        <div className="relative z-10 pb-8 md:pb-12">
+          <p className="font-semibold text-sm text-[#d2bfa3] tracking-widest">SERVICES</p>
+          <h2 className="text-3xl md:text-5xl font-bold mt-2 mb-10 font-lato text-white">WHAT WE OFFER</h2>
+          <p className="max-w-2xl mx-auto text-sm md:text-base text-gray-300">
+          Unlock exceptional services in car sales, car rentals, and real estate, delivering tailored options for your vehicle and property needs with unmatched quality.
           </p>
         </div>
       </div>
@@ -73,8 +73,8 @@ export default function Services() {
         <div className="container mx-auto px-2 sm:px-4 text-center -mt-4 sm:-mt-6 md:-mt-8 lg:-mt-16">
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             <div>
-              <p className="text-xl sm:text-2xl md:text-3xl font-bold text-black font-lato">6 +</p>
-              <p className="text-gray-500 text-xs sm:text-sm">Years of Experience</p>
+              <p className="text-3xl md:text-4xl font-bold text-black font-lato">6 +</p>
+              <p className="text-gray-500 text-sm">Years of Experience</p>
             </div>
             <div>
               <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black font-lato">80 +</p>

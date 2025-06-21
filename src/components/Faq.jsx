@@ -5,10 +5,10 @@ const FaqItem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200 py-4">
+    <div className="border-b border-black py-4">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center text-left text-sm md:text-lg font-medium font-heebo text-white focus:outline-none focus:ring-0 border-none"
+        className="w-full flex justify-between p-3 items-center text-left text-xs md:text-lg font-medium font-heebo text-white focus:outline-none focus:ring-0 border-none bg-black"
       >
         <span>{question}</span>
         <span>{isOpen ? '-' : '+'}</span>
@@ -49,7 +49,7 @@ const Faq = () => {
   return (
     <div className="bg-white py-20">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 font-lato">Frequently Asked Questions</h2>
+        <h2 className="md:text-4xl text-3xl font-bold text-center mb-12 font-lato text-black ">Frequently Asked Questions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
           <div className="flex flex-col justify-between p-0 focus:outline-none border-none">
             {faqData.map((item, index) => (
