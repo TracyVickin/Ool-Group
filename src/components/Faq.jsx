@@ -8,7 +8,7 @@ const FaqItem = ({ question, answer }) => {
     <div className="border-b border-gray-200 py-4">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex justify-between items-center text-left text-sm md:text-lg font-medium font-heebo text-gray-800 focus:outline-none focus:ring-0 border-none"
+        className="w-full flex justify-between items-center text-left text-sm md:text-lg font-medium font-heebo text-white focus:outline-none focus:ring-0 border-none"
       >
         <span>{question}</span>
         <span>{isOpen ? '-' : '+'}</span>

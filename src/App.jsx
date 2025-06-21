@@ -11,8 +11,8 @@ import ContactPage from './components/ContactPage';
 const Home = () => (
   <>
     <Hero />
-    <Services />
     <AboutSection />
+    <Services />
     <Partners />
     <Faq />
     <ReachOut />
