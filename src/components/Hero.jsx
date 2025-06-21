@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 import { FaWhatsapp, FaRegClock } from 'react-icons/fa';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import house1 from '../assets/house1.png';
+import card2 from '../assets/card2.png';
+import house3 from '../assets/house3.png';
+import house2 from '../assets/house2.png';
 
-const images = [
-  "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80",
-];
+
+const images = [house1, card2, house3, house2];
 
 export default function Hero() {
   const [bgIndex, setBgIndex] = useState(0);
