@@ -39,7 +39,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 text-xs sm:text-sm md:text-base">
                   Invest in premium cars for sale, featuring the latest models and top-notch quality for discerning buyers.
                 </p>
-                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">LEARN MORE</button>
+                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">VIEW COLLECTION</button>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 text-xs sm:text-sm md:text-base">
                   Experience hassle-free car rentals with a wide selection, perfect for short trips or long adventures.
                 </p>
-                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">LEARN MORE</button>
+                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">VIEW COLLECTION</button>
               </div>
             </div>
 
@@ -63,7 +63,7 @@ export default function Services() {
                 <p className="text-gray-600 mb-4 text-xs sm:text-sm md:text-base">
                   Choose from a variety of homes to rent or purchase, offering comfort and value for every family size.
                 </p>
-                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">LEARN MORE</button>
+                <button className="bg-black text-white px-3 sm:px-4 md:px-6 py-1 sm:py-2 hover:bg-white hover:text-black border border-black transition-all duration-300 focus:outline-none text-xs sm:text-sm md:text-base">VIEW PROPERTIES</button>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const latestProjects = [
@@ -25,8 +25,10 @@ export default function Footer() {
             <div className="flex space-x-4">
               <a href="#" className="bg-black text-white  p-2 rounded-full"><FaFacebookF /></a>
               <a href="#" className="bg-black text-white  p-2 rounded-full"><FaTwitter /></a>
-              <a href="#" className="bg-black text-white  p-2 rounded-full"><FaInstagram /></a>
-              <a href="#" className="bg-black text-white  p-2 rounded-full"><FaLinkedinIn /></a>
+              <a href="https://instagram.com/ool_autos" className="bg-black text-white  p-2 rounded-full"><FaInstagram /></a>
+              <a href="https://wa.me/2349135775085" className="bg-black text-white  p-2 rounded-full">
+                  <FaWhatsapp className="text-white " />
+                </a>
             </div>
           </div>
 
