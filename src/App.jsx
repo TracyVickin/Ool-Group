@@ -7,6 +7,7 @@ import Faq from "./components/Faq";
 import Partners from "./components/Partners";
 import ReachOut from './components/ReachOut';
 import ContactPage from './components/ContactPage';
+import Footer from "./components/Footer";
 
 const Home = () => (
   <>
@@ -16,6 +17,7 @@ const Home = () => (
     <Partners />
     <Faq />
     <ReachOut />
+    <Footer />
   </>
 );
 

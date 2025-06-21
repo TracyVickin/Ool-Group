@@ -21,7 +21,7 @@ const AboutSection = () => {
               <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white w-[100px] h-[100px] rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-black">
                 <FaCar size={60} />
               </div>
-              <h3 className="text-2xl font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Quick Rentals</h3>
+              <h3 className="text-2xl text-black font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Quick Rentals</h3>
               <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-300">
               Discover a wide range of cars for rent, from compact to luxury, tailored to your travel needs with ease and convenience.
               </p>
@@ -31,7 +31,7 @@ const AboutSection = () => {
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white w-[100px] h-[100px] rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-black">
                     <FaHome size={60} />
                 </div>
-              <h3 className="text-2xl font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Smart Property Deals</h3>
+              <h3 className="text-2xl text-black font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Smart Property Deals</h3>
               <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-300">
               Find the perfect house to rent or buy, with smart options for every budget and lifestyle, ensuring a seamless experience..
               </p>
@@ -41,7 +41,7 @@ const AboutSection = () => {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white w-[100px] h-[100px] rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-black">
                     <FaCarSide size={60} />
                 </div>
-              <h3 className="text-2xl font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Premium Car Sales</h3>
+              <h3 className="text-2xl text-black font-lato font-bold mb-4 transition-colors duration-300 group-hover:text-white">Premium Car Sales</h3>
               <p className="text-gray-600 transition-colors duration-300 group-hover:text-gray-300">
               Explore a selection of our premium cars, from sleek executive classics to powerful and dependable SUVs. Find the perfect ride that makes a statement wherever you go.
               </p>
