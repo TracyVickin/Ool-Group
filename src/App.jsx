@@ -13,7 +13,6 @@ const Home = () => (
     <AboutSection />
     <Partners />
     <Faq />
-    
     <ReachOut />
   </>
 );

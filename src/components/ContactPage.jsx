@@ -15,7 +15,7 @@ const contactInfo = [
     contact: 'oolpropertiesthebest@gmail.com',
     href: 'mailto:oolpropertiesthebest@gmail.com',
     instagram: 'ool_properties',
-    whatsapp: '+2349135775085',
+    whatsapp: 'Whatsapp',
     whatsappHref: 'https://wa.me/2349135775085'
   },
   {
@@ -29,7 +29,8 @@ const contactInfo = [
 
 const ContactPage = () => {
   return (
-    <div className="bg-gray-50 min-h-screen flex items-center justify-center py-12">
+    <section className="w-[100vw] flex items-center justify-center">
+    <div className="bg-gray-50 min-h-screen flex items-center justify-center py-12 w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <h1 className="text-5xl font-bold text-center mb-4">Contact Us</h1>
         <p className="text-gray-600 text-center mb-12">Get in touch with the right team for your needs.</p>
@@ -56,6 +57,7 @@ const ContactPage = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 
