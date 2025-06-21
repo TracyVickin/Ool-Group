@@ -31,7 +31,7 @@ export default function Hero() {
       }}
     >
       {/* Top Bar */}
-      <div className="w-full flex justify-end items-center px-4 sm:px-8 md:px-16 py-2 text-[10px] sm:text-xs text-[#d2bfa3] bg-black/60 font-heebo border-b border-gray-500">
+      <div className="w-full flex justify-end items-center px-4 sm:px-8 md:px-16 py-2 text-[10px] sm:text-xs text-[#ad9271] bg-black/60 font-heebo border-b border-gray-500">
         <div className="flex items-center gap-2">
           <FaRegClock />
           <span>Opening : Mon-Fri 08:00 – 06:00</span>
@@ -46,10 +46,10 @@ export default function Hero() {
           </button>
         </div>
         <ul className={`md:flex flex-col md:flex-row absolute md:static top-full left-0 w-full md:w-auto bg-black/80 md:bg-transparent items-center gap-4 sm:gap-8 md:gap-10 text-white font-heebo text-xs sm:text-sm tracking-wide transition-all duration-300 ease-in-out ${isMenuOpen ? 'flex' : 'hidden'}`}>
-          <li className="py-2 md:py-0"><Link to="/" className="text-white hover:text-[#d2bfa3]">HOME</Link></li>
-          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">ABOUT US</a></li>
-          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">SERVICES</a></li>
-          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#d2bfa3]">PROJECTS</a></li>
+          <li className="py-2 md:py-0"><Link to="/" className="text-white hover:text-[#ad9271]">HOME</Link></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#ad9271]">ABOUT US</a></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#ad9271]">SERVICES</a></li>
+          <li className="py-2 md:py-0"><a href="#" className="text-white hover:text-[#ad9271]">PROJECTS</a></li>
           <li className="py-2 md:py-0"><Link to="/contact" className="text-white hover:text-[#d2bfa3]">CONTACT</Link></li>
         </ul>
       </nav>

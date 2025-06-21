@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import AboutSection from "./components/AboutSection";
@@ -8,6 +8,9 @@ import Partners from "./components/Partners";
 import ReachOut from './components/ReachOut';
 import ContactPage from './components/ContactPage';
 import Footer from "./components/Footer";
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfService from './components/TermsOfService';
+import Disclaimer from './components/Disclaimer';
 
 const Home = () => (
   <>
@@ -27,6 +30,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
     </Router>
   );
