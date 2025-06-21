@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaInstagram, FaPhone, FaEnvelope, FaWhatsapp, FaMapMarkerAlt, FaClock, FaRegClock, FaBars, FaTimes } from 'react-icons/fa';
 import contactImage from '../assets/contact-handshake.jpg'; // Assuming you will add an image to assets
 import { Link } from 'react-router-dom';
+import Footer from './Footer';
   
 const contactInfo = [
   {
@@ -69,7 +70,7 @@ const ContactPage = () => {
       </nav>
 
       {/* Main Content */}
-      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-16">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-16 border-b border-black">
         <div className="text-center mb-8">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#ad9271]">CONTACT US</h1>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
@@ -159,6 +160,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
