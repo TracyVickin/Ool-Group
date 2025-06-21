@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 import AboutSection from "./components/AboutSection";
 import Faq from "./components/Faq";
 import Partners from "./components/Partners";
@@ -11,6 +12,7 @@ const Home = () => (
   <>
     <Hero />
     <AboutSection />
+    <Services />
     <Partners />
     <Faq />
     <ReachOut />
